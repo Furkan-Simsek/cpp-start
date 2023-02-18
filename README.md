@@ -1,6 +1,8 @@
 # C++ Starter Files
 My C++ Starter Files
 
+I use g++ and gcc for compiling
+
 
 ## Contents
 * 1-Hello World
