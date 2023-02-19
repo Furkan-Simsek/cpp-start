@@ -1,5 +1,17 @@
 #include <iostream>
 
+class Error {
+    private:
+        std::string message;
+    public:
+        Error(std::string message){
+            this->message = message;
+        }
+        std::string what(){
+            return this->message;
+        }
+};
+
 double divide(int x, int y) {
     if (y == 0) {
         return 0;
@@ -15,9 +27,9 @@ void Divide(){
     std::cout << "Enter a number: ";
     std::cin >> y;
     if (y == 0)
-        throw std::runtime_error("Can't divide by zero");
+        throw Error("Cannot divide by zero");
     std::cout << "Result: " << x/y << std::endl;
-    }catch (const std::exception& e){
+    }catch (Error e){
         std::cout << "Error: " << e.what() << std::endl;
     }
 }
