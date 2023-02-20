@@ -1,7 +1,7 @@
 # C++ Starter Files
 My C++ Starter Files
 
-I use g++ and gcc for compiling
+I use g++ for compiling
 
 
 ## Contents(main.cpp)
